@@ -33,14 +33,19 @@ public class Main {
         int averageValue = 0;
         for (double element: arr){
             summ+=element;
-            averageValue=summ/30;
+            averageValue=summ/5;
         }
         System.out.println("Средняя сумма трат за месяц составила "+averageValue+ " руб");
 
         System.out.println("Задача 4");
         char[] reverseFullName={'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i=reverseFullName.length-1; i>=0; i--){
-            System.out.print(reverseFullName[i]);
+        for (int i=0; i< reverseFullName.length/2; i++){
+            char temp = reverseFullName[i];
+        reverseFullName[i] = reverseFullName[reverseFullName.length-i-1];
+        reverseFullName[reverseFullName.length-i-1] = temp;
+        }
+        for (char num: reverseFullName){
+            System.out.print(num + " ");
         }
 
 
