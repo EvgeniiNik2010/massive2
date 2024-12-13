@@ -32,9 +32,9 @@ public class Main {
         int summ = 0;
         int averageValue = 0;
         for (double element: arr){
-            summ+=element;
+            summ+=element;}
             averageValue=summ/arr.length;
-        }
+
         System.out.println("Средняя сумма трат за месяц составила "+averageValue+ " руб");
 
         System.out.println("Задача 4");
